@@ -6,5 +6,4 @@ RSpec.describe MessagesController, type: :controller do
     subject { get :index }
     it { is_expected.to have_http_status(:ok) }
   end
-
 end

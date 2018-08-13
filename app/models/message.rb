@@ -6,6 +6,6 @@ class Message < ApplicationRecord
   private
 
   def broadcast
-    ActionCable.server.broadcast('chat', as_json.merge(action: 'CreateMessage'))
+    ActionCable.server.broadcast(ChatChannel::STREAM_FROM, as_json.merge(action: 'CreateMessage'))
   end
 end
