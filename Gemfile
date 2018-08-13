@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'decent_exposure'
 gem 'active_model_serializers'
+gem 'rack-cors'
 
 group :development, :test do
   gem 'factory_bot_rails'
